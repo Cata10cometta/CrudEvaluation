@@ -1,0 +1,14 @@
+C:\Users\DELL\source\repos\CrudEvaluacion\Entity\bin\Debug\net9.0\Entity.deps.json
+C:\Users\DELL\source\repos\CrudEvaluacion\Entity\bin\Debug\net9.0\Entity.runtimeconfig.json
+C:\Users\DELL\source\repos\CrudEvaluacion\Entity\bin\Debug\net9.0\Entity.dll
+C:\Users\DELL\source\repos\CrudEvaluacion\Entity\bin\Debug\net9.0\Entity.pdb
+C:\Users\DELL\source\repos\CrudEvaluacion\Entity\obj\Debug\net9.0\Entity.csproj.AssemblyReference.cache
+C:\Users\DELL\source\repos\CrudEvaluacion\Entity\obj\Debug\net9.0\Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\source\repos\CrudEvaluacion\Entity\obj\Debug\net9.0\Entity.AssemblyInfoInputs.cache
+C:\Users\DELL\source\repos\CrudEvaluacion\Entity\obj\Debug\net9.0\Entity.AssemblyInfo.cs
+C:\Users\DELL\source\repos\CrudEvaluacion\Entity\obj\Debug\net9.0\Entity.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\CrudEvaluacion\Entity\obj\Debug\net9.0\Entity.dll
+C:\Users\DELL\source\repos\CrudEvaluacion\Entity\obj\Debug\net9.0\refint\Entity.dll
+C:\Users\DELL\source\repos\CrudEvaluacion\Entity\obj\Debug\net9.0\Entity.pdb
+C:\Users\DELL\source\repos\CrudEvaluacion\Entity\obj\Debug\net9.0\Entity.genruntimeconfig.cache
+C:\Users\DELL\source\repos\CrudEvaluacion\Entity\obj\Debug\net9.0\ref\Entity.dll
