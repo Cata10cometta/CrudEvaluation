@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "woN9SwA34ps=",
+  "dgSpecHash": "TpEYDVOrGn4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\DELL\\source\\repos\\CrudEvaluacion\\Utilities\\Utilities.csproj",
+  "projectFilePath": "C:\\Users\\DELL\\Desktop\\CrudEvaluacion\\Utilities\\Utilities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",

@@ -1,17 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\DELL\\source\\repos\\CrudEvaluacion\\",
+  "WorkspaceRootPath": "C:\\Users\\DELL\\Desktop\\CrudEvaluacion\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E13360DE-8126-4923-9368-6F876799AF8F}|Entity\\Entity.csproj|c:\\users\\dell\\source\\repos\\crudevaluacion\\entity\\dto\\orderdto\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E13360DE-8126-4923-9368-6F876799AF8F}|Entity\\Entity.csproj|c:\\users\\dell\\desktop\\crudevaluacion\\entity\\model\\basemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E13360DE-8126-4923-9368-6F876799AF8F}|Entity\\Entity.csproj|solutionrelative:entity\\model\\basemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E13360DE-8126-4923-9368-6F876799AF8F}|Entity\\Entity.csproj|c:\\users\\dell\\desktop\\crudevaluacion\\entity\\dto\\orderdto\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E13360DE-8126-4923-9368-6F876799AF8F}|Entity\\Entity.csproj|solutionrelative:entity\\dto\\orderdto\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E13360DE-8126-4923-9368-6F876799AF8F}|Entity\\Entity.csproj|c:\\users\\dell\\source\\repos\\crudevaluacion\\entity\\model\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E13360DE-8126-4923-9368-6F876799AF8F}|Entity\\Entity.csproj|c:\\users\\dell\\desktop\\crudevaluacion\\entity\\model\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E13360DE-8126-4923-9368-6F876799AF8F}|Entity\\Entity.csproj|solutionrelative:entity\\model\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E13360DE-8126-4923-9368-6F876799AF8F}|Entity\\Entity.csproj|c:\\users\\dell\\source\\repos\\crudevaluacion\\entity\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E13360DE-8126-4923-9368-6F876799AF8F}|Entity\\Entity.csproj|c:\\users\\dell\\desktop\\crudevaluacion\\entity\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E13360DE-8126-4923-9368-6F876799AF8F}|Entity\\Entity.csproj|solutionrelative:entity\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,8 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BaseModel.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\CrudEvaluacion\\Entity\\Model\\BaseModel.cs",
+              "RelativeDocumentMoniker": "Entity\\Model\\BaseModel.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\CrudEvaluacion\\Entity\\Model\\BaseModel.cs",
+              "RelativeToolTip": "Entity\\Model\\BaseModel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T02:48:52.083Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
@@ -42,42 +59,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "OrderDto.cs",
-              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\CrudEvaluacion\\Entity\\Dto\\OrderDTO\\OrderDto.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\CrudEvaluacion\\Entity\\Dto\\OrderDTO\\OrderDto.cs",
               "RelativeDocumentMoniker": "Entity\\Dto\\OrderDTO\\OrderDto.cs",
-              "ToolTip": "C:\\Users\\DELL\\source\\repos\\CrudEvaluacion\\Entity\\Dto\\OrderDTO\\OrderDto.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\CrudEvaluacion\\Entity\\Dto\\OrderDTO\\OrderDto.cs",
               "RelativeToolTip": "Entity\\Dto\\OrderDTO\\OrderDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-31T20:51:31.092Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\CrudEvaluacion\\Entity\\Context\\ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\CrudEvaluacion\\Entity\\Context\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Entity\\Context\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\DELL\\source\\repos\\CrudEvaluacion\\Entity\\Context\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\CrudEvaluacion\\Entity\\Context\\ApplicationDbContext.cs",
               "RelativeToolTip": "Entity\\Context\\ApplicationDbContext.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAA+wCEAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T20:43:06.882Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-31T20:43:06.882Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\DELL\\source\\repos\\CrudEvaluacion\\Entity\\Model\\Order.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\CrudEvaluacion\\Entity\\Model\\Order.cs",
               "RelativeDocumentMoniker": "Entity\\Model\\Order.cs",
-              "ToolTip": "C:\\Users\\DELL\\source\\repos\\CrudEvaluacion\\Entity\\Model\\Order.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\CrudEvaluacion\\Entity\\Model\\Order.cs",
               "RelativeToolTip": "Entity\\Model\\Order.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T20:40:40.466Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-31T20:40:40.466Z"
             }
           ]
         }

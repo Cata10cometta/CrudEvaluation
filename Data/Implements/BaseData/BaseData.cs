@@ -23,6 +23,9 @@ namespace Data.Implements.BaseData
 
         public override async Task<T> CreateAsync(T entity)
         {
+            entity.CreatedAt = DateTime.UtcNow;
+            entity.UpdatedAt = null; // OPCIONAL: Solo si haces nullable UpdatedAt
+
             await _dbSet.AddAsync(entity);
             await _context.SaveChangesAsync();
             return entity;
@@ -30,10 +33,18 @@ namespace Data.Implements.BaseData
 
         public override async Task<T> UpdateAsync(T entity)
         {
-            _context.Set<T>().Update(entity);
+            var existing = await _context.Set<T>().FindAsync(entity.Id);
+            if (existing == null) return null;
+
+            _context.Entry(existing).CurrentValues.SetValues(entity);
+            existing.UpdatedAt = DateTime.UtcNow;
+
             await _context.SaveChangesAsync();
-            return entity;
+            return existing;
         }
+
+
+
 
 
         public override async Task<bool> DeleteAsync(int id)

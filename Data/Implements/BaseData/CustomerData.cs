@@ -1,9 +1,9 @@
-﻿using Data.Implements.BaseData;
-using Data.Interface;
+﻿using Data.Interface;
 using Entity.Context;
 using Entity.Model;
+using static Dapper.SqlMapper;
 
-namespace Data.Implements
+namespace Data.Implements.BaseData
 {
     public class CustomerData : BaseModelData<Customer>, ICustomerData
     {
@@ -18,6 +18,7 @@ namespace Data.Implements
                 return false;
             // Actualizar el estado del cliente
             customer.Status = active;
+            customer.DeleteAt = DateTime.UtcNow;
             _context.Entry(customer).Property(u => u.Status).IsModified = true;
             await _context.SaveChangesAsync();
             return true;
