@@ -1,8 +1,114 @@
 [
   {
-    "ContainingType": "WebApplication1.Controllers.Implements.CustomerController",
-    "Method": "UpdatePartialCustomer",
-    "RelativePath": "api/Customer",
+    "ContainingType": "Web.Controllers.Implements.CourseController",
+    "Method": "UpdatePartialCourse",
+    "RelativePath": "api/Course",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Entity.Dto.CourseDTO.UpdateCourseDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Web.Controllers.Implements.GenericController\u00602[[Entity.Dto.CourseDTO.CourseDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Entity.Model.Course, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetAll",
+    "RelativePath": "api/Course",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Web.Controllers.Implements.GenericController\u00602[[Entity.Dto.CourseDTO.CourseDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Entity.Model.Course, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Create",
+    "RelativePath": "api/Course",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Entity.Dto.CourseDTO.CourseDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Web.Controllers.Implements.GenericController\u00602[[Entity.Dto.CourseDTO.CourseDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Entity.Model.Course, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Update",
+    "RelativePath": "api/Course",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Entity.Dto.CourseDTO.CourseDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Web.Controllers.Implements.GenericController\u00602[[Entity.Dto.CourseDTO.CourseDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Entity.Model.Course, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "GetById",
+    "RelativePath": "api/Course/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Web.Controllers.Implements.GenericController\u00602[[Entity.Dto.CourseDTO.CourseDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Entity.Model.Course, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "api/Course/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Web.Controllers.Implements.CourseController",
+    "Method": "DeleteLogicCourse",
+    "RelativePath": "api/Course/logic/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication1.Controllers.Implements.StudentController",
+    "Method": "UpdatePartialStudent",
+    "RelativePath": "api/Student",
     "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
@@ -13,22 +119,22 @@
         "IsRequired": false
       },
       {
-        "Name": "CustomerId",
+        "Name": "StudentId",
         "Type": "System.Int32",
         "IsRequired": false
       },
       {
         "Name": "dto",
-        "Type": "Entity.Dto.CustomerDTO.UpdateCustomerDto",
+        "Type": "Entity.Dto.StudentDTO.UpdateStudentDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Web.Controllers.Implements.GenericController\u00602[[Entity.Dto.CustomerDTO.CustomerDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Entity.Model.Customer, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "ContainingType": "Web.Controllers.Implements.GenericController\u00602[[Entity.Dto.StudentDTO.StudentDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Entity.Model.student, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
     "Method": "GetAll",
-    "RelativePath": "api/Customer",
+    "RelativePath": "api/Student",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -36,41 +142,41 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Web.Controllers.Implements.GenericController\u00602[[Entity.Dto.CustomerDTO.CustomerDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Entity.Model.Customer, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "ContainingType": "Web.Controllers.Implements.GenericController\u00602[[Entity.Dto.StudentDTO.StudentDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Entity.Model.student, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
     "Method": "Create",
-    "RelativePath": "api/Customer",
+    "RelativePath": "api/Student",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "Entity.Dto.CustomerDTO.CustomerDto",
+        "Type": "Entity.Dto.StudentDTO.StudentDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Web.Controllers.Implements.GenericController\u00602[[Entity.Dto.CustomerDTO.CustomerDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Entity.Model.Customer, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "ContainingType": "Web.Controllers.Implements.GenericController\u00602[[Entity.Dto.StudentDTO.StudentDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Entity.Model.student, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
     "Method": "Update",
-    "RelativePath": "api/Customer",
+    "RelativePath": "api/Student",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "Entity.Dto.CustomerDTO.CustomerDto",
+        "Type": "Entity.Dto.StudentDTO.StudentDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Web.Controllers.Implements.GenericController\u00602[[Entity.Dto.CustomerDTO.CustomerDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Entity.Model.Customer, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "ContainingType": "Web.Controllers.Implements.GenericController\u00602[[Entity.Dto.StudentDTO.StudentDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Entity.Model.student, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
     "Method": "GetById",
-    "RelativePath": "api/Customer/{id}",
+    "RelativePath": "api/Student/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -84,9 +190,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Web.Controllers.Implements.GenericController\u00602[[Entity.Dto.CustomerDTO.CustomerDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Entity.Model.Customer, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "ContainingType": "Web.Controllers.Implements.GenericController\u00602[[Entity.Dto.StudentDTO.StudentDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Entity.Model.student, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
     "Method": "Delete",
-    "RelativePath": "api/Customer/{id}",
+    "RelativePath": "api/Student/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -100,9 +206,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApplication1.Controllers.Implements.CustomerController",
-    "Method": "DeleteLogicCustomer",
-    "RelativePath": "api/Customer/logic/{id}",
+    "ContainingType": "WebApplication1.Controllers.Implements.StudentController",
+    "Method": "DeleteLogicStudent",
+    "RelativePath": "api/Student/logic/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -116,9 +222,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Web.Controllers.Implements.OrderController",
-    "Method": "UpdatePartialOrder",
-    "RelativePath": "api/Order",
+    "ContainingType": "WebApplication1.Controllers.Implements.TuitionController",
+    "Method": "UpdatePartialTuition",
+    "RelativePath": "api/Tuition",
     "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
@@ -129,17 +235,22 @@
         "IsRequired": false
       },
       {
+        "Name": "TuitionId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
         "Name": "dto",
-        "Type": "Entity.Dto.OrderDTO.UpdateOrderDto",
+        "Type": "Entity.Dto.TuitionDTO.UpdateTuitionDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Web.Controllers.Implements.GenericController\u00602[[Entity.Dto.OrderDTO.OrderDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Entity.Model.Order, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "ContainingType": "Web.Controllers.Implements.GenericController\u00602[[Entity.Dto.TuitionDTO.TuitionDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Entity.Model.Tuition, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
     "Method": "GetAll",
-    "RelativePath": "api/Order",
+    "RelativePath": "api/Tuition",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -147,41 +258,41 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Web.Controllers.Implements.GenericController\u00602[[Entity.Dto.OrderDTO.OrderDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Entity.Model.Order, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "ContainingType": "Web.Controllers.Implements.GenericController\u00602[[Entity.Dto.TuitionDTO.TuitionDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Entity.Model.Tuition, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
     "Method": "Create",
-    "RelativePath": "api/Order",
+    "RelativePath": "api/Tuition",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "Entity.Dto.OrderDTO.OrderDto",
+        "Type": "Entity.Dto.TuitionDTO.TuitionDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Web.Controllers.Implements.GenericController\u00602[[Entity.Dto.OrderDTO.OrderDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Entity.Model.Order, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "ContainingType": "Web.Controllers.Implements.GenericController\u00602[[Entity.Dto.TuitionDTO.TuitionDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Entity.Model.Tuition, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
     "Method": "Update",
-    "RelativePath": "api/Order",
+    "RelativePath": "api/Tuition",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "dto",
-        "Type": "Entity.Dto.OrderDTO.OrderDto",
+        "Type": "Entity.Dto.TuitionDTO.TuitionDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Web.Controllers.Implements.GenericController\u00602[[Entity.Dto.OrderDTO.OrderDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Entity.Model.Order, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "ContainingType": "Web.Controllers.Implements.GenericController\u00602[[Entity.Dto.TuitionDTO.TuitionDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Entity.Model.Tuition, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
     "Method": "GetById",
-    "RelativePath": "api/Order/{id}",
+    "RelativePath": "api/Tuition/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -195,9 +306,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Web.Controllers.Implements.GenericController\u00602[[Entity.Dto.OrderDTO.OrderDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Entity.Model.Order, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "ContainingType": "Web.Controllers.Implements.GenericController\u00602[[Entity.Dto.TuitionDTO.TuitionDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Entity.Model.Tuition, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
     "Method": "Delete",
-    "RelativePath": "api/Order/{id}",
+    "RelativePath": "api/Tuition/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -211,9 +322,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Web.Controllers.Implements.OrderController",
-    "Method": "DeleteLogicOrder",
-    "RelativePath": "api/Order/logic/{id}",
+    "ContainingType": "WebApplication1.Controllers.Implements.TuitionController",
+    "Method": "DeleteLogicTuition",
+    "RelativePath": "api/Tuition/logic/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,

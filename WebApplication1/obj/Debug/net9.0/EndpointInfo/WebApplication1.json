@@ -5,10 +5,176 @@
     "version": "v1"
   },
   "paths": {
-    "/api/Customer": {
+    "/api/Course": {
       "patch": {
         "tags": [
-          "Customer"
+          "Course"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateCourseDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateCourseDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateCourseDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Course"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Course"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CourseDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CourseDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CourseDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Course"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CourseDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CourseDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CourseDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Course/logic/{id}": {
+      "delete": {
+        "tags": [
+          "Course"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Course/{id}": {
+      "get": {
+        "tags": [
+          "Course"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Course"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Student": {
+      "patch": {
+        "tags": [
+          "Student"
         ],
         "parameters": [
           {
@@ -20,7 +186,7 @@
             }
           },
           {
-            "name": "CustomerId",
+            "name": "StudentId",
             "in": "query",
             "schema": {
               "type": "integer",
@@ -32,17 +198,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateCustomerDto"
+                "$ref": "#/components/schemas/UpdateStudentDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateCustomerDto"
+                "$ref": "#/components/schemas/UpdateStudentDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateCustomerDto"
+                "$ref": "#/components/schemas/UpdateStudentDto"
               }
             }
           }
@@ -55,7 +221,7 @@
       },
       "get": {
         "tags": [
-          "Customer"
+          "Student"
         ],
         "responses": {
           "200": {
@@ -65,23 +231,23 @@
       },
       "post": {
         "tags": [
-          "Customer"
+          "Student"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CustomerDto"
+                "$ref": "#/components/schemas/StudentDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/CustomerDto"
+                "$ref": "#/components/schemas/StudentDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/CustomerDto"
+                "$ref": "#/components/schemas/StudentDto"
               }
             }
           }
@@ -94,23 +260,23 @@
       },
       "put": {
         "tags": [
-          "Customer"
+          "Student"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CustomerDto"
+                "$ref": "#/components/schemas/StudentDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/CustomerDto"
+                "$ref": "#/components/schemas/StudentDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/CustomerDto"
+                "$ref": "#/components/schemas/StudentDto"
               }
             }
           }
@@ -122,10 +288,10 @@
         }
       }
     },
-    "/api/Customer/logic/{id}": {
+    "/api/Student/logic/{id}": {
       "delete": {
         "tags": [
-          "Customer"
+          "Student"
         ],
         "parameters": [
           {
@@ -145,10 +311,10 @@
         }
       }
     },
-    "/api/Customer/{id}": {
+    "/api/Student/{id}": {
       "get": {
         "tags": [
-          "Customer"
+          "Student"
         ],
         "parameters": [
           {
@@ -169,7 +335,7 @@
       },
       "delete": {
         "tags": [
-          "Customer"
+          "Student"
         ],
         "parameters": [
           {
@@ -189,14 +355,22 @@
         }
       }
     },
-    "/api/Order": {
+    "/api/Tuition": {
       "patch": {
         "tags": [
-          "Order"
+          "Tuition"
         ],
         "parameters": [
           {
             "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "TuitionId",
             "in": "query",
             "schema": {
               "type": "integer",
@@ -208,17 +382,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateOrderDto"
+                "$ref": "#/components/schemas/UpdateTuitionDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateOrderDto"
+                "$ref": "#/components/schemas/UpdateTuitionDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateOrderDto"
+                "$ref": "#/components/schemas/UpdateTuitionDto"
               }
             }
           }
@@ -231,7 +405,7 @@
       },
       "get": {
         "tags": [
-          "Order"
+          "Tuition"
         ],
         "responses": {
           "200": {
@@ -241,23 +415,23 @@
       },
       "post": {
         "tags": [
-          "Order"
+          "Tuition"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/OrderDto"
+                "$ref": "#/components/schemas/TuitionDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/OrderDto"
+                "$ref": "#/components/schemas/TuitionDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/OrderDto"
+                "$ref": "#/components/schemas/TuitionDto"
               }
             }
           }
@@ -270,23 +444,23 @@
       },
       "put": {
         "tags": [
-          "Order"
+          "Tuition"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/OrderDto"
+                "$ref": "#/components/schemas/TuitionDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/OrderDto"
+                "$ref": "#/components/schemas/TuitionDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/OrderDto"
+                "$ref": "#/components/schemas/TuitionDto"
               }
             }
           }
@@ -298,10 +472,10 @@
         }
       }
     },
-    "/api/Order/logic/{id}": {
+    "/api/Tuition/logic/{id}": {
       "delete": {
         "tags": [
-          "Order"
+          "Tuition"
         ],
         "parameters": [
           {
@@ -321,10 +495,10 @@
         }
       }
     },
-    "/api/Order/{id}": {
+    "/api/Tuition/{id}": {
       "get": {
         "tags": [
-          "Order"
+          "Tuition"
         ],
         "parameters": [
           {
@@ -345,7 +519,7 @@
       },
       "delete": {
         "tags": [
-          "Order"
+          "Tuition"
         ],
         "parameters": [
           {
@@ -368,7 +542,7 @@
   },
   "components": {
     "schemas": {
-      "CustomerDto": {
+      "CourseDto": {
         "type": "object",
         "properties": {
           "id": {
@@ -381,32 +555,15 @@
           "name": {
             "type": "string",
             "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "OrderDto": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
           },
-          "status": {
-            "type": "boolean"
-          },
-          "product": {
-            "type": "string",
-            "nullable": true
-          },
-          "customerId": {
+          "credits": {
             "type": "integer",
             "format": "int32"
           }
         },
         "additionalProperties": false
       },
-      "UpdateCustomerDto": {
+      "StudentDto": {
         "type": "object",
         "properties": {
           "id": {
@@ -419,11 +576,19 @@
           "name": {
             "type": "string",
             "nullable": true
+          },
+          "lastName": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "UpdateOrderDto": {
+      "TuitionDto": {
         "type": "object",
         "properties": {
           "id": {
@@ -433,9 +598,96 @@
           "status": {
             "type": "boolean"
           },
-          "product": {
+          "description": {
             "type": "string",
             "nullable": true
+          },
+          "studentId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "courseId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fecha": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateCourseDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "status": {
+            "type": "boolean"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "credits": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateStudentDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "status": {
+            "type": "boolean"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastName": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateTuitionDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "status": {
+            "type": "boolean"
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "studentId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "courseId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fecha": {
+            "type": "string",
+            "format": "date-time"
           }
         },
         "additionalProperties": false

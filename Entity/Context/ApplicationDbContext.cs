@@ -21,23 +21,34 @@ namespace Entity.Context
         {
         }
         //Dbset SETS
-        public DbSet<Customer> customers { get; set; }
-        public DbSet<Order> orders { get; set; }
+        public DbSet<student> Students { get; set; }
+        public DbSet<Tuition> Tuitions { get; set; }
+        public DbSet<Course> Courses { get; set; }
 
 
 
 
             protected override void OnModelCreating(ModelBuilder modelBuilder)
             {
-                // Relación 1:N entre Cliente y Pedido
-                modelBuilder.Entity<Order>()
-                    .HasOne(b => b.Customer)
-                    .WithMany(a => a.orders)
-                    .HasForeignKey(b => b.CustomerId);
+            // Estudiante -> Matricula (1 a muchos)
+            modelBuilder.Entity<student>()
+                .HasMany(e => e.Tuitions)
+                .WithOne(m => m.Student)
+                .HasForeignKey(m => m.StudentId);
 
-                
+            // Curso -> Matricula (1 a muchos)
+            modelBuilder.Entity<Course>()
+                .HasMany(c => c.Tuitions)
+                .WithOne(m => m.Course)
+                .HasForeignKey(m => m.CourseId);
 
-                base.OnModelCreating(modelBuilder);
+            // Opcional: Configurar tabla Matricula
+            modelBuilder.Entity<Tuition>()
+                .HasKey(m => m.Id); // Clave primaria
+
+
+
+            base.OnModelCreating(modelBuilder);
                 modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 
             }

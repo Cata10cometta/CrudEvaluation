@@ -10,11 +10,15 @@ using Utilities.Mappers.Profiles;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
 // Add controllers
 builder.Services.AddControllers();
 
 // Register AutoMapper with explicit profiles
-builder.Services.AddAutoMapper(typeof(CustomerProfile), typeof(OrderProfile));
+builder.Services.AddAutoMapper(typeof(StudentProfile), typeof(CourseProfile));
+
+builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
+
 
 // Add Swagger documentation
 builder.Services.AddEndpointsApiExplorer();
@@ -31,13 +35,17 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddScoped(typeof(IBaseModelData<>), typeof(BaseModelData<>));
 builder.Services.AddScoped(typeof(IBaseBusiness<,>), typeof(BaseBusiness<,>));
 
-// Register Customer-specific services
-builder.Services.AddScoped<ICustomerData, CustomerData>();
-builder.Services.AddScoped<ICustomerBusiness, CustomerBusiness>();
+// Register Student-specific services
+builder.Services.AddScoped<IStudentData, StudentData>();
+builder.Services.AddScoped<IStudentBusiness, StudentBusiness>();
 
-// Register Order-specific services
-builder.Services.AddScoped<IOrderData, OrderData>();
-builder.Services.AddScoped<IOrderBusiness, OrderBusiness>();
+// Register Course-specific services
+builder.Services.AddScoped<ICourseData, CourseData>();
+builder.Services.AddScoped<ICourseBusiness, CourseBusiness>();
+
+// Register Tuition-specific services
+builder.Services.AddScoped<ITuitionData, TuitionData>();
+builder.Services.AddScoped<ITuitionBusiness, TuitionBusiness>();
 
 // Configure CORS
 var origenesPermitidos = builder.Configuration.GetValue<string>("OrigenesPermitidos")!.Split(";");

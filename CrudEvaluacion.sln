@@ -15,6 +15,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities", "Utilities\Utilities.csproj", "{DA672100-F88E-4FA2-B548-B04A758EDB45}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{022BD469-9C9C-45B4-ABAC-1056883F3A50}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DA672100-F88E-4FA2-B548-B04A758EDB45} = {DA672100-F88E-4FA2-B548-B04A758EDB45}
+		{E13360DE-8126-4923-9368-6F876799AF8F} = {E13360DE-8126-4923-9368-6F876799AF8F}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
